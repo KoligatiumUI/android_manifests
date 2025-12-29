@@ -7,6 +7,13 @@
         sync-j="4"
         revision="refs/heads/avium-16" />
 
+<remote name="koligatium"
+        fetch="https://github.com/KoligatiumUI"
+        sync-c="true"
+        sync-j="4"
+        revision="refs/heads/avium-16" />
+
+
     <project path="android" name="android_manifests" remote="avium" />
 
     <!-- Bootable -->
@@ -67,7 +74,7 @@
     <project path="external/blurview" name="android_external_blurview" remote="avium" />
 
     <!-- Vendor -->
-    <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
-    <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
+    <project path="vendor/lineage" name="android_vendor_lineage" remote="koligatium" />
+    <project path="vendor/avium" name="android_vendor_avium" remote="koligatium" />
 
 </manifest>
